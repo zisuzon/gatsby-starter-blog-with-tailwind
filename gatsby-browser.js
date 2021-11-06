@@ -1,10 +1,17 @@
 // custom typefaces
-import "typeface-montserrat"
-import "typeface-merriweather"
+// import "typeface-montserrat"
+// import "typeface-merriweather"
 // normalize CSS across browsers
-import "./src/normalize.css"
+import "./src/styles/fonts.css"
+
+// normalize CSS across browsers
+import "./src/styles/normalize.css"
+
+// custom tailwind styles
+import "./src/styles/tailwind.scss"
+
 // custom CSS styles
-import "./src/style.css"
+import "./src/styles/style.scss"
 
 // Highlighting for code blocks
 import "prismjs/themes/prism.css"

@@ -12,6 +12,22 @@ module.exports = {
     },
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-sass`,
+      options: {
+        // Configure SASS to process Tailwind
+        postCssPlugins: [require('tailwindcss')],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          'Mulish\:200,300,400,500,600,700,800'
+        ],
+        display: 'swap'
+      }
+    },
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
